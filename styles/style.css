@@ -41,3 +41,43 @@
   font-size: 4.1rem;
   line-height: 4.1rem;
 }
+
+.upcoming-matches {
+  display: flex;
+  gap: 15px;
+}
+.upcoming-matches-left {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 15px;
+  height: fit-content;
+  background-color: black;
+}
+.upcoming-matches-left .btn {
+  border-radius: 10px;
+}
+.upcoming-matches-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex: 1;
+  gap: 20px;
+}
+.upcoming-matches-right .card .btn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 15px;
+}
+.upcoming-matches-right img {
+  height: 180px;
+  width: 100%;
+  border-radius: 20px;
+}
+.upcoming-matches-left .btn:nth-child(1),
+.upcoming-matches-left .btn:nth-child(2) {
+  background-color: white;
+  color: black;
+}
